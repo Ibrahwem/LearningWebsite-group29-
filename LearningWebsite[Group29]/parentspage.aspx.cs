@@ -26,20 +26,20 @@ namespace Learningweb
                 com.ExecuteNonQuery();
                 con.Close();
                 comment.Text = "";
-                Label2.Text = "You have Send your suggests";
+                Label12.Text = "You have Send your suggests";
             }
             else 
             {
                 if (DropDownList4.Text == "Rating" && comment.Text == "")
                 {
-                    Label2.Text = "please enter your rate and write a Suggestions";
+                    Label12.Text = "please enter your rate and write a Suggestions";
                 }
                 else 
                     if (DropDownList4.Text == "Rating")
-                      Label2.Text = "please enter your rate";
+                      Label12.Text = "please enter your rate";
                 else
                     if (comment.Text == "")
-                        Label2.Text = "please write a suggestions";
+                        Label12.Text = "please write a suggestions";
                
                     
 
