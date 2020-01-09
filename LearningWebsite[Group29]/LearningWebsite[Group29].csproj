@@ -96,6 +96,7 @@
     <Content Include="AdventureStoriesD.aspx" />
     <Content Include="AgreedStoriesByParents.aspx" />
     <Content Include="AnimalStories.aspx" />
+    <Content Include="AnimalStoriesD.aspx" />
     <Content Include="CrocodileAndTheMonkey.aspx" />
     <Content Include="finishreading.aspx" />
     <Content Include="Global.asax" />
@@ -211,6 +212,13 @@
     </Compile>
     <Compile Include="AnimalStories.aspx.designer.cs">
       <DependentUpon>AnimalStories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalStoriesD.aspx.cs">
+      <DependentUpon>AnimalStoriesD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnimalStoriesD.aspx.designer.cs">
+      <DependentUpon>AnimalStoriesD.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="CrocodileAndTheMonkey.aspx.cs">
