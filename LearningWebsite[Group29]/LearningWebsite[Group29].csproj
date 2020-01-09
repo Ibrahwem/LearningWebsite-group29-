@@ -92,6 +92,7 @@
     <Content Include="Homepage.aspx" />
     <Content Include="ParentLogin.aspx" />
     <Content Include="parentRegister.aspx" />
+    <Content Include="parentspage.aspx" />
     <Content Include="Studentlogin.aspx" />
     <Content Include="Studentpage.aspx" />
     <Content Include="studetregister.aspx" />
@@ -122,6 +123,13 @@
     </Compile>
     <Compile Include="parentRegister.aspx.designer.cs">
       <DependentUpon>parentRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parentspage.aspx.cs">
+      <DependentUpon>parentspage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parentspage.aspx.designer.cs">
+      <DependentUpon>parentspage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Studentlogin.aspx.cs">
