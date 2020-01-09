@@ -91,6 +91,14 @@
     <Content Include="Global.asax" />
     <Content Include="Homepage.aspx" />
     <Content Include="How To Build a Bratchet.aspx" />
+    <Content Include="images\how to build picture\1.png" />
+    <Content Include="images\how to build picture\2.png" />
+    <Content Include="images\how to build picture\3.png" />
+    <Content Include="images\how to build picture\4.png" />
+    <Content Include="images\how to build picture\5.png" />
+    <Content Include="images\how to build picture\6.png" />
+    <Content Include="images\how to build picture\7.png" />
+    <Content Include="images\how to build picture\8.png" />
     <Content Include="ParentLogin.aspx" />
     <Content Include="parentRegister.aspx" />
     <Content Include="parentspage.aspx" />
