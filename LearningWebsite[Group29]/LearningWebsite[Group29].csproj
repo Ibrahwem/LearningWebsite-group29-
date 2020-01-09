@@ -165,6 +165,7 @@
     <Content Include="ParentsaComments.aspx" />
     <Content Include="ParentSendMessage.aspx" />
     <Content Include="parentspage.aspx" />
+    <Content Include="StoriesRateForAdmin.aspx" />
     <Content Include="Studentlogin.aspx" />
     <Content Include="Studentpage.aspx" />
     <Content Include="StudentReadingTimeForParents.aspx" />
@@ -315,6 +316,13 @@
       <DependentUpon>parentspage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StoriesRateForAdmin.aspx.cs">
+      <DependentUpon>StoriesRateForAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StoriesRateForAdmin.aspx.designer.cs">
+      <DependentUpon>StoriesRateForAdmin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Studentlogin.aspx.cs">
       <DependentUpon>Studentlogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
