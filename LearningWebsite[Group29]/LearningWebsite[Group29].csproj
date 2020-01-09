@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdventureStories.aspx" />
+    <Content Include="AnimalStories.aspx" />
     <Content Include="finishreading.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Homepage.aspx" />
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="AdventureStories.aspx.designer.cs">
       <DependentUpon>AdventureStories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnimalStories.aspx.cs">
+      <DependentUpon>AnimalStories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnimalStories.aspx.designer.cs">
+      <DependentUpon>AnimalStories.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="finishreading.aspx.cs">
