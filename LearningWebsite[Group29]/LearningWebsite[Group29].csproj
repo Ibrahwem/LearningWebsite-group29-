@@ -93,6 +93,7 @@
     <Content Include="adminInformation.aspx" />
     <Content Include="Adminlogin.aspx" />
     <Content Include="AdventureStories.aspx" />
+    <Content Include="AdventureStoriesD.aspx" />
     <Content Include="AnimalStories.aspx" />
     <Content Include="CrocodileAndTheMonkey.aspx" />
     <Content Include="finishreading.aspx" />
@@ -187,6 +188,13 @@
     </Compile>
     <Compile Include="AdventureStories.aspx.designer.cs">
       <DependentUpon>AdventureStories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdventureStoriesD.aspx.cs">
+      <DependentUpon>AdventureStoriesD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdventureStoriesD.aspx.designer.cs">
+      <DependentUpon>AdventureStoriesD.aspx</DependentUpon>
     </Compile>
     <Compile Include="AnimalStories.aspx.cs">
       <DependentUpon>AnimalStories.aspx</DependentUpon>
