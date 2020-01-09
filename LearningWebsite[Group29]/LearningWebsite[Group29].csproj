@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="aboutus.aspx" />
+    <Content Include="adminInformation.aspx" />
     <Content Include="AdventureStories.aspx" />
     <Content Include="AnimalStories.aspx" />
     <Content Include="CrocodileAndTheMonkey.aspx" />
@@ -155,6 +156,13 @@
     </Compile>
     <Compile Include="aboutus.aspx.designer.cs">
       <DependentUpon>aboutus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminInformation.aspx.cs">
+      <DependentUpon>adminInformation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminInformation.aspx.designer.cs">
+      <DependentUpon>adminInformation.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdventureStories.aspx.cs">
       <DependentUpon>AdventureStories.aspx</DependentUpon>
