@@ -170,6 +170,7 @@
     <Content Include="Studentpage.aspx" />
     <Content Include="StudentReadingTimeForParents.aspx" />
     <Content Include="StudentRequests.aspx" />
+    <Content Include="StudentsReadingTime.aspx" />
     <Content Include="studetregister.aspx" />
     <Content Include="THE PARTICULAR WAY OF THE ODD MS. MCKAY.aspx" />
     <Content Include="TheLionandTheMouseShortStory.aspx" />
@@ -350,6 +351,13 @@
     </Compile>
     <Compile Include="StudentRequests.aspx.designer.cs">
       <DependentUpon>StudentRequests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentsReadingTime.aspx.cs">
+      <DependentUpon>StudentsReadingTime.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentsReadingTime.aspx.designer.cs">
+      <DependentUpon>StudentsReadingTime.aspx</DependentUpon>
     </Compile>
     <Compile Include="studetregister.aspx.cs">
       <DependentUpon>studetregister.aspx</DependentUpon>
