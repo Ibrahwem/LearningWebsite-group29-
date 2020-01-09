@@ -90,6 +90,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Homepage.aspx" />
+    <Content Include="How To Build a Bratchet.aspx" />
     <Content Include="ParentLogin.aspx" />
     <Content Include="parentRegister.aspx" />
     <Content Include="parentspage.aspx" />
@@ -109,6 +110,13 @@
     </Compile>
     <Compile Include="Homepage.aspx.designer.cs">
       <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="How To Build a Bratchet.aspx.cs">
+      <DependentUpon>How To Build a Bratchet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="How To Build a Bratchet.aspx.designer.cs">
+      <DependentUpon>How To Build a Bratchet.aspx</DependentUpon>
     </Compile>
     <Compile Include="ParentLogin.aspx.cs">
       <DependentUpon>ParentLogin.aspx</DependentUpon>
