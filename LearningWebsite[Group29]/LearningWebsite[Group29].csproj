@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="ParentLogin.aspx" />
     <Content Include="parentRegister.aspx" />
     <Content Include="Studentlogin.aspx" />
     <Content Include="studetregister.aspx" />
@@ -98,6 +99,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ParentLogin.aspx.cs">
+      <DependentUpon>ParentLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ParentLogin.aspx.designer.cs">
+      <DependentUpon>ParentLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="parentRegister.aspx.cs">
       <DependentUpon>parentRegister.aspx</DependentUpon>
