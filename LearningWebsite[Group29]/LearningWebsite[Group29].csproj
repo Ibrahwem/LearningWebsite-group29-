@@ -99,6 +99,7 @@
     <Content Include="images\how to build picture\6.png" />
     <Content Include="images\how to build picture\7.png" />
     <Content Include="images\how to build picture\8.png" />
+    <Content Include="kingmichael.aspx" />
     <Content Include="ParentLogin.aspx" />
     <Content Include="parentRegister.aspx" />
     <Content Include="parentspage.aspx" />
@@ -125,6 +126,13 @@
     </Compile>
     <Compile Include="How To Build a Bratchet.aspx.designer.cs">
       <DependentUpon>How To Build a Bratchet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kingmichael.aspx.cs">
+      <DependentUpon>kingmichael.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kingmichael.aspx.designer.cs">
+      <DependentUpon>kingmichael.aspx</DependentUpon>
     </Compile>
     <Compile Include="ParentLogin.aspx.cs">
       <DependentUpon>ParentLogin.aspx</DependentUpon>
