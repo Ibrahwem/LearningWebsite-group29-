@@ -177,6 +177,7 @@
     <Content Include="TheLionandTheMouseShortStory.aspx" />
     <Content Include="ThinkingStories.aspx" />
     <Content Include="ThinkingStoriesD.aspx" />
+    <Content Include="Usersdetails.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -369,6 +370,7 @@
     </Compile>
     <Compile Include="Suggeststory.aspx.cs">
       <DependentUpon>Suggeststory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Suggeststory.aspx.designer.cs">
       <DependentUpon>Suggeststory.aspx</DependentUpon>
@@ -400,6 +402,13 @@
     </Compile>
     <Compile Include="ThinkingStoriesD.aspx.designer.cs">
       <DependentUpon>ThinkingStoriesD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Usersdetails.aspx.cs">
+      <DependentUpon>Usersdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Usersdetails.aspx.designer.cs">
+      <DependentUpon>Usersdetails.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
