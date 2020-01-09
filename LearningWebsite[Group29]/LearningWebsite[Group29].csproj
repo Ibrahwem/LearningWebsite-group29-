@@ -154,6 +154,7 @@
     <Content Include="studetregister.aspx" />
     <Content Include="TheLionandTheMouseShortStory.aspx" />
     <Content Include="ThinkingStories.aspx" />
+    <Content Include="ThinkingStoriesD.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -343,6 +344,13 @@
     </Compile>
     <Compile Include="ThinkingStories.aspx.designer.cs">
       <DependentUpon>ThinkingStories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ThinkingStoriesD.aspx.cs">
+      <DependentUpon>ThinkingStoriesD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThinkingStoriesD.aspx.designer.cs">
+      <DependentUpon>ThinkingStoriesD.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
