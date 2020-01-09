@@ -89,6 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdventureStories.aspx" />
+    <Content Include="finishreading.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Homepage.aspx" />
     <Content Include="How To Build a Bratchet.aspx" />
@@ -126,6 +127,13 @@
       <DependentUpon>AdventureStories.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="finishreading.aspx.cs">
+      <DependentUpon>finishreading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="finishreading.aspx.designer.cs">
+      <DependentUpon>finishreading.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
