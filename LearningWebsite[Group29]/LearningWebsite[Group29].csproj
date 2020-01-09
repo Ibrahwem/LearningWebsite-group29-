@@ -90,6 +90,7 @@
   <ItemGroup>
     <Content Include="AdventureStories.aspx" />
     <Content Include="AnimalStories.aspx" />
+    <Content Include="CrocodileAndTheMonkey.aspx" />
     <Content Include="finishreading.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Homepage.aspx" />
@@ -159,6 +160,13 @@
       <DependentUpon>AnimalStories.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="CrocodileAndTheMonkey.aspx.cs">
+      <DependentUpon>CrocodileAndTheMonkey.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CrocodileAndTheMonkey.aspx.designer.cs">
+      <DependentUpon>CrocodileAndTheMonkey.aspx</DependentUpon>
+    </Compile>
     <Compile Include="finishreading.aspx.cs">
       <DependentUpon>finishreading.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
