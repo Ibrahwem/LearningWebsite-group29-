@@ -88,6 +88,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aboutus.aspx" />
     <Content Include="AdventureStories.aspx" />
     <Content Include="AnimalStories.aspx" />
     <Content Include="CrocodileAndTheMonkey.aspx" />
@@ -148,6 +149,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="aboutus.aspx.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="aboutus.aspx.designer.cs">
+      <DependentUpon>aboutus.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdventureStories.aspx.cs">
       <DependentUpon>AdventureStories.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
