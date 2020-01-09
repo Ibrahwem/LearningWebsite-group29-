@@ -171,6 +171,7 @@
     <Content Include="parentspage.aspx" />
     <Content Include="StoriesRateForAdmin.aspx" />
     <Content Include="Studentlogin.aspx" />
+    <Content Include="StudentMessages.aspx" />
     <Content Include="Studentpage.aspx" />
     <Content Include="StudentReadingTimeForParents.aspx" />
     <Content Include="StudentRequests.aspx" />
@@ -336,6 +337,13 @@
     </Compile>
     <Compile Include="Studentlogin.aspx.designer.cs">
       <DependentUpon>Studentlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentMessages.aspx.cs">
+      <DependentUpon>StudentMessages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentMessages.aspx.designer.cs">
+      <DependentUpon>StudentMessages.aspx</DependentUpon>
     </Compile>
     <Compile Include="Studentpage.aspx.cs">
       <DependentUpon>Studentpage.aspx</DependentUpon>

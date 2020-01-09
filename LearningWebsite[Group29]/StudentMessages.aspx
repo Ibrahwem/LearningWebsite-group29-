@@ -25,7 +25,7 @@
             <br />
             <br />
             <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="319px">
                 <Columns>
                     <asp:BoundField DataField="message" HeaderText="message" SortExpression="message" />
                 </Columns>
