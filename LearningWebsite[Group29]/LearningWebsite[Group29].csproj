@@ -97,6 +97,10 @@
     <Content Include="AgreedStoriesByParents.aspx" />
     <Content Include="AnimalStories.aspx" />
     <Content Include="AnimalStoriesD.aspx" />
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="CrocodileAndTheMonkey.aspx" />
     <Content Include="finishreading.aspx" />
     <Content Include="Global.asax" />
@@ -422,7 +426,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
   </ItemGroup>
