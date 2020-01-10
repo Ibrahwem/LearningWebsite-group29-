@@ -21,5 +21,16 @@ namespace UnitTestWeb
             Assert.IsFalse(x);
 
         }
+        [TestMethod]
+        public void TestStudentusername()
+        {
+            //Arrange
+            studetregister check = new studetregister();
+            // Act
+            bool x = check.StudentUsername("Ibrahem1998");
+            //Assert
+            Assert.IsTrue(x);
+
+        }
     }
 }
