@@ -32,5 +32,15 @@ namespace UnitTestWeb
             Assert.IsTrue(x);
 
         }
+        [TestMethod]
+        public void TestStudentPass()
+        {
+            //Arrange
+            studetregister check = new studetregister();
+            // Act
+            bool x = check.StudentPass("AbcdefghiI20158");
+            //Assert
+            Assert.IsTrue(x);
+        }
     }
 }
