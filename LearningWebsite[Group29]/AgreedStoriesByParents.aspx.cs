@@ -23,5 +23,19 @@ namespace Learningweb
         {
             Response.Redirect("Studentpage.aspx");
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (DropDownList1.Text== "The Crocodile And The Monkey")
+                Response.Redirect("CrocodileAndTheMonkey.aspx");
+            else if (DropDownList1.Text == "The Lion and The Mouse ")
+                Response.Redirect("TheLionandTheMouseShortStory.aspx");
+            else if (DropDownList1.Text == "HOW TO BUILD A BRATCHET")
+                Response.Redirect("How To Build a Bratchet.aspx");
+            else if (DropDownList1.Text == "KING MICHAEL")
+                Response.Redirect("kingmichael.aspx");
+            else if (DropDownList1.Text == "THE PARTICULAR WAY OF THE ODD MS. MCKAY")
+                Response.Redirect("THE PARTICULAR WAY OF THE ODD MS. MCKAY.aspx");
+        }
     }
 }

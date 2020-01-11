@@ -38,6 +38,19 @@
                 </SelectParameters>
             </asp:SqlDataSource>
             <br />
+            <strong><em>
+            <asp:Label ID="Label2" runat="server" CssClass="auto-style1" Text="Please choose story to start reading"></asp:Label>
+            <br />
+            </em></strong>
+            <br />
+            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True"  DataTextField="Story" DataValueField="Story" Height="17px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="139px">
+                <asp:ListItem Selected="True">Stories list</asp:ListItem>
+                <asp:ListItem>The Crocodile And The Monkey</asp:ListItem>
+                <asp:ListItem>The Lion and The Mouse </asp:ListItem>
+                <asp:ListItem>HOW TO BUILD A BRATCHET</asp:ListItem>
+                <asp:ListItem>KING MICHAEL</asp:ListItem>
+                <asp:ListItem>THE PARTICULAR WAY OF THE ODD MS. MCKAY</asp:ListItem>
+            </asp:DropDownList>
             <br />
             <br />
             <br />
@@ -53,4 +66,8 @@
     background-size:100%;
     background-attachment:fixed;
 }
+    .auto-style1 {
+        color: #FFFFFF;
+        background-color: #3333FF;
+    }
 </style>
