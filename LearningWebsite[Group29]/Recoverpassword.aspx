@@ -46,6 +46,9 @@
             color: #333399;
             background-color: #333399;
         }
+        .auto-style15 {
+            background-color: #FFFF00;
+        }
     </style>
 </head>
 <body>
@@ -68,7 +71,7 @@
                         </strong></em>
                     </td>
                     <td class="auto-style4">
-                        <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged1"></asp:TextBox>
+                        <asp:TextBox ID="username" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style13"><em><strong>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="username" CssClass="auto-style7" ErrorMessage="Please Enter your username">*</asp:RequiredFieldValidator>
@@ -128,7 +131,7 @@
                 </tr>
                 <tr>
                     <td colspan="3"><strong><em>
-                        <asp:Label ID="Massege" runat="server" Text="."></asp:Label>
+                        <asp:Label ID="Massege" runat="server" Text="." CssClass="auto-style15"></asp:Label>
                         </em></strong></td>
                 </tr>
                 <tr>
