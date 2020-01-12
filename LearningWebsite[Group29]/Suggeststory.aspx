@@ -22,7 +22,7 @@
 &nbsp;
             <asp:Label ID="Label4" runat="server" style="font-weight: 700; font-style: italic" Text="Choose story"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="storyname" DataValueField="storyname" style="margin-left: 0px" Width="169px">
+            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource1" DataTextField="storyname" DataValueField="storyname" style="margin-left: 0px" Width="169px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
             </asp:DropDownList>
             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [storyname] FROM [stories]"></asp:SqlDataSource>
 &nbsp;&nbsp;
