@@ -133,7 +133,7 @@
             </asp:DropDownList>
             <br />
             <br />
-            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Send rate" />
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Send rate" BackColor="#33CCCC" BorderColor="Red" />
             <br />
             <br />
             <asp:Label ID="Label18" runat="server" Text="."></asp:Label>

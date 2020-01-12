@@ -44,9 +44,9 @@
         <p>
             &nbsp;</p>
         <p style="text-align: right">
-            <asp:Button ID="Button1" runat="server" Height="29px" PostBackUrl="~/parentspage.aspx" Text="Home" Width="105px" />
+            <asp:Button ID="Button1" runat="server" Height="29px" PostBackUrl="~/parentspage.aspx" Text="Home" Width="105px" BackColor="#33CCCC" BorderColor="Red" />
             &nbsp;
-            <asp:Button ID="Button2" runat="server" PostBackUrl="~/StudentRequests.aspx" Text="choose story" Height="29px" Width="112px" />
+            <asp:Button ID="Button2" runat="server" PostBackUrl="~/StudentRequests.aspx" Text="choose story" Height="29px" Width="112px" BackColor="#33CCCC" BorderColor="Red" />
         </p>
     </form>
 </body>

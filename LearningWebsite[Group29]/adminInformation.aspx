@@ -9,7 +9,7 @@
 <body>
     <form id="form1" runat="server" style="font-size: medium">
         <h1 style="color: #FFFFFF">  You can contact us from this information :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button3" runat="server" OnClick="Button1_Click" style="text-align: right" Text="Home" Width="129px" />
+            <asp:Button ID="Button3" runat="server" OnClick="Button1_Click" style="text-align: right" Text="Home" Width="129px" BackColor="#33CCCC" BorderColor="Red" />
             </h1>
         <p style="color: #FFFFFF"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
         <p style="color: #FFFFFF"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;&nbsp; Name : Abed Gharra</p>

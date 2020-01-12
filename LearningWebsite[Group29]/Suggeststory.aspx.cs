@@ -60,5 +60,10 @@ namespace Learningweb
         {
             Response.Redirect("Studentpage.aspx");
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
