@@ -29,9 +29,9 @@
         <p style="text-align: right">
             &nbsp;</p>
         <p style="text-align: right">
-            <asp:Button ID="Button1" runat="server" Height="28px" PostBackUrl="~/parentspage.aspx" Text="Home" Width="113px" />
+            <asp:Button ID="Button1" runat="server" Height="28px" PostBackUrl="~/parentspage.aspx" Text="Home" Width="113px" BackColor="#33CCCC" BorderColor="Red" />
             &nbsp;
-            <asp:Button ID="Button2" runat="server" PostBackUrl="~/StudentRequests.aspx" Text="choose story" Height="28px" />
+            <asp:Button ID="Button2" runat="server" PostBackUrl="~/StudentRequests.aspx" Text="choose story" Height="28px" BackColor="#33CCCC" BorderColor="Red" OnClick="Button2_Click" />
         </p>
     </form>
 </body>
