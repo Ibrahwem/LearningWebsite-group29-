@@ -30,7 +30,7 @@
             <br />
             <br />
             <br />
-            <asp:TextBox ID="messagetoson" runat="server" Height="193px" style="text-align: center" Width="371px"></asp:TextBox>
+            <asp:TextBox ID="messagetoson" runat="server" Height="193px" style="text-align: center" Width="371px" ></asp:TextBox>
             <br />
             <br />
             <br />

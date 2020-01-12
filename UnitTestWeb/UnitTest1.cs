@@ -75,6 +75,16 @@ namespace UnitTestWeb
             Assert.IsTrue(x);
 
         }
+        [TestMethod]
+        public void ParentSendMessage()
+        {
+            //Arrange
+            ParentSendMessage check = new ParentSendMessage();
+            // Act
+            bool x = check.MessageLength("Test Message");
+            //Assert
+            Assert.IsTrue(x);
+        }
 
 
     }
