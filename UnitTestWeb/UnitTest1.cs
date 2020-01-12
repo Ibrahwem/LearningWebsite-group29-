@@ -42,5 +42,16 @@ namespace UnitTestWeb
             //Assert
             Assert.IsTrue(x);
         }
+        [TestMethod]
+        public void Testparentpassword()
+        {
+            //Arrange
+            Register check = new Register();
+            // Act
+            bool x = check.Parentpassword("Mahmoud199");
+            //Assert
+            Assert.IsTrue(x);
+
+        }
     }
 }
