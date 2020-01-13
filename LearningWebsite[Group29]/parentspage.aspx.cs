@@ -11,6 +11,14 @@ namespace Learningweb
     {
         readonly SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database1.mdf;Integrated Security=True");
 
+        public bool suggestsize(string sug)
+        {
+            if (sug.Length<=200)
+            {
+                return true;
+            }
+            return false;
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -18,33 +26,39 @@ namespace Learningweb
 
         protected void Button9_Click(object sender, EventArgs e)
         {
-            if (DropDownList4.Text != "Rating" && comment.Text != "")
+            if (suggestsize(comment.Text))
             {
-                string dat = "Insert into [suggestions](comment,Parentname,rate) Values('" + comment.Text + "','" + DropDownList5.Text + "','" + DropDownList4.Text + "')";
-                SqlCommand com = new SqlCommand(dat, con);
-                con.Open();
-                com.ExecuteNonQuery();
-                con.Close();
-                comment.Text = "";
-                Label12.Text = "You have Send your suggests";
-            }
-            else 
-            {
-                if (DropDownList4.Text == "Rating" && comment.Text == "")
+                if (DropDownList4.Text != "Rating" && comment.Text != "")
                 {
-                    Label12.Text = "please enter your rate and write a Suggestions";
+                    string dat = "Insert into [suggestions](comment,Parentname,rate) Values('" + comment.Text + "','" + DropDownList5.Text + "','" + DropDownList4.Text + "')";
+                    SqlCommand com = new SqlCommand(dat, con);
+                    con.Open();
+                    com.ExecuteNonQuery();
+                    con.Close();
+                    comment.Text = "";
+                    Label12.Text = "You have Send your suggests";
                 }
-                else 
-                    if (DropDownList4.Text == "Rating")
-                      Label12.Text = "please enter your rate";
                 else
-                    if (comment.Text == "")
+                {
+                    if (DropDownList4.Text == "Rating" && comment.Text == "")
+                    {
+                        Label12.Text = "please enter your rate and write a Suggestions";
+                    }
+                    else
+                        if (DropDownList4.Text == "Rating")
+                        Label12.Text = "please enter your rate";
+                    else
+                        if (comment.Text == "")
                         Label12.Text = "please write a suggestions";
-               
-                    
 
+
+
+                }
             }
-
+            else
+            {
+                Label12.Text = "Max amount of letters is 200";
+            }
            // Response.Redirect("parentspage.aspx");
         }
        
@@ -81,6 +95,11 @@ namespace Learningweb
         protected void Button12_Click(object sender, EventArgs e)
         {
             Response.Redirect("ParentSendMessage.aspx");
+        }
+
+        protected void comment_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
