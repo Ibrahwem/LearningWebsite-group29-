@@ -9,7 +9,23 @@ namespace Learningweb
 {
     public partial class Adminlogin : System.Web.UI.Page
     {
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database1.mdf;Integrated Security=True");
+        readonly SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Database1.mdf;Integrated Security=True");
+        public bool Isadminlogin(string name,string Pass)
+        {
+            string check = " select count(*) from [admin] where USERNAME ='" + name + "'and PASSWORD= '" + Pass + "' ";
+            SqlCommand com = new SqlCommand(check, con);
+            con.Open();
+            int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
+            con.Close();
+            if (temp == 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -17,12 +33,9 @@ namespace Learningweb
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string check = " select count(*) from [admin] where USERNAME ='" + suser.Text + "'and PASSWORD= '" + spass.Text + "' ";
-            SqlCommand com = new SqlCommand(check, con);
-            con.Open();
-            int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
-            con.Close();
-            if (temp == 1)
+            string N = suser.Text;
+            string P = spass.Text;
+            if (Isadminlogin(N,P))
             {
                 Response.Redirect("admin.aspx");
             }
