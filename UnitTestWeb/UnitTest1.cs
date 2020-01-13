@@ -85,7 +85,6 @@ namespace UnitTestWeb
             //Assert
             Assert.IsTrue(x);
         }
-
         [TestMethod]
         public void TestSuggestionSize()
         {

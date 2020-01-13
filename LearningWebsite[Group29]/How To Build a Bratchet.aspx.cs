@@ -365,32 +365,7 @@ namespace Learningweb
                 Label22.Font.Size = FontUnit.XLarge;
                 Label23.Font.Size = FontUnit.XLarge;
             }
-            else if (DropDownList2.SelectedIndex.Equals(7))
-            {
-                Label24.Font.Size = FontUnit.XXLarge;
-                Label2.Font.Size = FontUnit.XXLarge;
-                Label3.Font.Size = FontUnit.XXLarge;
-                Label4.Font.Size = FontUnit.XXLarge;
-                Label5.Font.Size = FontUnit.XXLarge;
-                Label6.Font.Size = FontUnit.XXLarge;
-                Label7.Font.Size = FontUnit.XXLarge;
-                Label8.Font.Size = FontUnit.XXLarge;
-                Label9.Font.Size = FontUnit.XXLarge;
-                Label10.Font.Size = FontUnit.XXLarge;
-                Label11.Font.Size = FontUnit.XXLarge;
-                Label12.Font.Size = FontUnit.XXLarge;
-                Label13.Font.Size = FontUnit.XXLarge;
-                Label14.Font.Size = FontUnit.XXLarge;
-                Label15.Font.Size = FontUnit.XXLarge;
-                Label16.Font.Size = FontUnit.XXLarge;
-                Label17.Font.Size = FontUnit.XXLarge;
-                Label18.Font.Size = FontUnit.XXLarge;
-                Label19.Font.Size = FontUnit.XXLarge;
-                Label20.Font.Size = FontUnit.XXLarge;
-                Label21.Font.Size = FontUnit.XXLarge;
-                Label22.Font.Size = FontUnit.XXLarge;
-                Label23.Font.Size = FontUnit.XXLarge;
-            }
+            
         }
 
         protected void Timer1_Tick(object sender, EventArgs e)
