@@ -54,7 +54,7 @@ namespace Learningweb
         {
             if (userpass.Length <= 9)
             {
-                Label64.Text = "Your Password should not be less than 10 letters";
+                Label64.Text = "Your Password should not be less than 10 letters(Min one capital letter/small letter/ *3* numbers)";
                 return false;
             }
             else
@@ -73,7 +73,7 @@ namespace Learningweb
                 }
                 if (countcapital + countnumber + countsmall != userpass.Length || countcapital == 0 || countnumber < 3 || countsmall == 0)
                 {
-                    Label64.Text = "Password should just have a small/capital letters and min 3 numbers!";
+                    Label64.Text = "Password should just have a small/capital letters and min *3* numbers!";
                     return false;
                 }
                 else

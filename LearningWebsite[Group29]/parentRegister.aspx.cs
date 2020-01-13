@@ -22,7 +22,7 @@ namespace Learningweb
             int countsmall = 0;
             if (pusername.Length >= 15)
             {
-                Label62.Text = "Your name should not be more than 14 letters";
+                Label62.Text = "Your name  be less than 15 letters";
                 return false;
             }
             else
@@ -48,7 +48,7 @@ namespace Learningweb
         {
             if (parentpass.Length <= 9)
             {
-                Label64.Text = "Your Password should not be less than 10 letters";
+                Label64.Text = "Your Password should not be less than 10 letters(Min one capital letter/small letter/ *3* numbers)";
                 return false;
             }
             else
@@ -67,7 +67,7 @@ namespace Learningweb
                 }
                 if (countcapital + countnumber + countsmall != parentpass.Length || countcapital == 0 || countnumber < 3 || countsmall == 0)
                 {
-                    Label64.Text = "Password should just have a small/capital letters and min 3 numbers!";
+                    Label64.Text = "Password should just have a small/capital letters and min *3* numbers!";
                     return false;
                 }
             }
