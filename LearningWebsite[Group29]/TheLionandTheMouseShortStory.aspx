@@ -35,7 +35,6 @@
                 <asp:ListItem>Medium</asp:ListItem>
                 <asp:ListItem>large</asp:ListItem>
                 <asp:ListItem>x-large</asp:ListItem>
-                <asp:ListItem>xx-large</asp:ListItem>
             </asp:DropDownList>
             <br />
             <asp:ScriptManager ID="ScriptManager1" runat="server">

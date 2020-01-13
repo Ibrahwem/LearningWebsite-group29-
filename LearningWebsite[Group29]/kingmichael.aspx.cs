@@ -154,16 +154,7 @@ namespace Learningweb
                 Label6.Font.Size = FontUnit.XLarge;
                 Label7.Font.Size = FontUnit.XLarge;
             }
-            else if (DropDownList2.SelectedIndex.Equals(7))
-            {
-                Label1.Font.Size = FontUnit.XXLarge;
-                Label2.Font.Size = FontUnit.XXLarge;
-                Label3.Font.Size = FontUnit.XXLarge;
-                Label4.Font.Size = FontUnit.XXLarge;
-                Label5.Font.Size = FontUnit.XXLarge;
-                Label6.Font.Size = FontUnit.XXLarge;
-                Label7.Font.Size = FontUnit.XXLarge;
-            }
+            
         }
 
         protected void Timer1_Tick(object sender, EventArgs e)
