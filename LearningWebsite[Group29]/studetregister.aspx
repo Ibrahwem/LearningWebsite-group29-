@@ -10,8 +10,8 @@
             text-decoration: none;
         }
         .auto-style3 {
-            color: #000BCC;
-            background-color: #FF3300;
+            color: #FFFFFF;
+            background-color: #3366CC;
         }
         body
         {
@@ -24,39 +24,46 @@
             background-color: #00FF00;
         }
 
+        .auto-style5 {
+            margin-left: 4px;
+        }
+        .auto-style6 {
+            background-color: #3366CC;
+        }
+
     </style>
 </head>
 <body style="        height: 765px
 ">
     <form id="form1" runat="server">
        <div>
-           <strong><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style3"> Register like a student</span><br />
+           <strong><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style6">&nbsp;</span><span class="auto-style3"> Register like a student</span><br />
             <br />
             <asp:Label ID="Label18" runat="server" Text="Fullname" CssClass="auto-style4"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="sfullname" runat="server"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="sfullname" ErrorMessage="insert your fullname" style="color: #FF0000">*</asp:RequiredFieldValidator>
             <br />
             <asp:Label ID="Label25" runat="server" Text="Username" style="background-color: #00FF00"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="susername" runat="server"></asp:TextBox>
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:TextBox ID="susername" runat="server" CssClass="auto-style5"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="susername" ErrorMessage="insert your username" style="color: #FF0000">*</asp:RequiredFieldValidator>
             &nbsp;<asp:Label ID="Label62" runat="server" style="color: #FFFF00; background-color: #FF0000" Text="Rules(14 latters  or less Min one capithal letter , numbers(0-9)at least one number)"></asp:Label>
             <br />
-           <span class="auto-style4">Enter yor Identity&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;
+           <span class="auto-style4">Enter yor Identity&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
            <asp:TextBox ID="sidentity" runat="server" style="background-color: #FFFFFF"></asp:TextBox>
            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="sidentity" ErrorMessage="Please Enter your identity" style="color: #FF0000">*</asp:RequiredFieldValidator>
             &nbsp;<asp:Label ID="Label63" runat="server" style="color: #FFFF00; background-color: #FF0000" Text="Should be 9 digits"></asp:Label>
             <br />
             <asp:Label ID="Label34" runat="server" Text="password" CssClass="auto-style4"></asp:Label>
-           <span class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <span class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="spassword" runat="server" TextMode="Password"></asp:TextBox>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="spassword" ErrorMessage="insert your password" style="color: #FF0000">*</asp:RequiredFieldValidator>
            <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="srepassword" ControlToValidate="spassword" ErrorMessage="Wrong in confirm password" style="color: #FF0000">*</asp:CompareValidator>
             &nbsp;<asp:Label ID="Label64" runat="server" style="color: #FFFF00; background-color: #FF0000" Text="Rules(not less than 10 latters  *Min letter in capital) numbers(0-9)at least three  numbers "></asp:Label>
             <br />
             <asp:Label ID="Label60" runat="server" Text="Type password again" CssClass="auto-style4"></asp:Label>
-           </em></strong>&nbsp;<strong><em><asp:TextBox ID="srepassword" runat="server" TextMode="Password"></asp:TextBox>
+           </em></strong>&nbsp;<strong><em>&nbsp;&nbsp; <asp:TextBox ID="srepassword" runat="server" TextMode="Password"></asp:TextBox>
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <br />
