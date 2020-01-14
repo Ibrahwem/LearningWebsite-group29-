@@ -95,6 +95,16 @@ namespace UnitTestWeb
             //Assert
             Assert.IsTrue(x);
         }
+        [TestMethod]
+        public void Idlength()
+        {
+            //Arrange
+            Suggeststory check = new Suggeststory();
+            // Act
+            bool x = check.IdValid("1234567h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
         
     }
 }
