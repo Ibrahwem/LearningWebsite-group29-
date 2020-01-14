@@ -16,7 +16,17 @@ namespace Learningweb
         {
 
         }
-
+        public bool IdValid(string id)
+        {
+            for (int i = 0; i < id.Length; i++)
+            {
+                if (id[i] < '0' || id[i] > '9')
+                {
+                    return false;
+                }
+            }
+            return id.Length == 9;
+        }
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (DropDownList2.SelectedIndex.Equals(1))
@@ -159,7 +169,7 @@ namespace Learningweb
                 Label7.Font.Size = FontUnit.XLarge;
 
             }
-           
+
         }
 
         protected void Timer1_Tick(object sender, EventArgs e)
@@ -170,7 +180,7 @@ namespace Learningweb
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-
+            if (IdValid(TextID.Text))
             {
                 string check = " select count(*) from [student] where Sidentity ='" + TextID.Text + "'";
                 SqlCommand com = new SqlCommand(check, con);
@@ -215,7 +225,12 @@ namespace Learningweb
                     Label18.ForeColor = System.Drawing.Color.Red;
                     Label18.Text = "This id doesn't exist !!.";
                 }
-                
+
+            }
+            else
+            {
+                Label18.ForeColor = System.Drawing.Color.Red;
+                Label18.Text = "invalid id !!.";
             }
         }
     }
