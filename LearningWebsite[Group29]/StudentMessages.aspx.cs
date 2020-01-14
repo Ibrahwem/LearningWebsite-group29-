@@ -16,24 +16,42 @@ namespace Learningweb
         {
 
         }
+        public bool IdValid(string id)
+        {
+            for (int i = 0; i < id.Length; i++)
+            {
+                if (id[i] < '0' || id[i] > '9')
+                {
+                    return false;
+                }
+            }
+            return id.Length == 9;
+        }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string check = " select count(*) from [student] where Sidentity ='" + TextBox1.Text + "'";
-            SqlCommand com = new SqlCommand(check, con);
-            con.Open();
-            int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
-            con.Close();
-            if (temp == 1)
+            if (IdValid(TextBox1.Text))
             {
+                string check = " select count(*) from [student] where Sidentity ='" + TextBox1.Text + "'";
+                SqlCommand com = new SqlCommand(check, con);
+                con.Open();
+                int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
+                con.Close();
+                if (temp == 1)
+                {
 
+                }
+                else
+                {
+                    Label3.ForeColor = System.Drawing.Color.Red;
+                    Label3.Text = "This id doesn't exist !!.";
+                }
             }
             else
             {
                 Label3.ForeColor = System.Drawing.Color.Red;
-                Label3.Text = "This id doesn't exist !!.";
+                Label3.Text = "invalid id !!.";
             }
-
         }
 
         protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)

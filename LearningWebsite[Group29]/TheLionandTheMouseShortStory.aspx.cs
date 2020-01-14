@@ -16,6 +16,17 @@ namespace Learningweb
         {
 
         }
+        public bool IdValid(string id)
+        {
+            for (int i = 0; i < id.Length; i++)
+            {
+                if (id[i] < '0' || id[i] > '9')
+                {
+                    return false;
+                }
+            }
+            return id.Length == 9;
+        }
 
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -275,50 +286,58 @@ namespace Learningweb
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string check = " select count(*) from [student] where Sidentity ='" + TextID.Text + "'";
-            SqlCommand com = new SqlCommand(check, con);
-            con.Open();
-            int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
-            con.Close();
-            if (temp == 1)
+            if (IdValid(TextID.Text))
             {
-                /*Adding new story to son list*/
-                string checks = " select count(*) from [storyrate]where Sidentity ='" + TextID.Text + "' and Storyname= '" + Nstory.Text + "'and Rate= '" + DropDownList4.Text + "'  ";
-                SqlCommand comm = new SqlCommand(checks, con);
+                string check = " select count(*) from [student] where Sidentity ='" + TextID.Text + "'";
+                SqlCommand com = new SqlCommand(check, con);
                 con.Open();
-                int temps = Convert.ToInt32(comm.ExecuteScalar().ToString());
+                int temp = Convert.ToInt32(com.ExecuteScalar().ToString());
                 con.Close();
-                if (temps != 1)
+                if (temp == 1)
                 {
-                    string dat = "Insert into [storyrate](Sidentity,Storyname,Rate) Values('" + TextID.Text + "','" + Nstory.Text + "','" + DropDownList4.Text + "')";
-                    SqlCommand commm = new SqlCommand(dat, con);
+                    /*Adding new story to son list*/
+                    string checks = " select count(*) from [storyrate]where Sidentity ='" + TextID.Text + "' and Storyname= '" + Nstory.Text + "'and Rate= '" + DropDownList4.Text + "'  ";
+                    SqlCommand comm = new SqlCommand(checks, con);
                     con.Open();
-                    commm.ExecuteNonQuery();
+                    int temps = Convert.ToInt32(comm.ExecuteScalar().ToString());
                     con.Close();
-                    string datt = "Insert into [readingtime](Sidentity,storyname,storyreadingtime) Values('" + TextID.Text + "','" + Nstory.Text + "','" + Label20.Text + "')";
-                    SqlCommand commmm = new SqlCommand(datt, con);
-                    con.Open();
-                    commmm.ExecuteNonQuery();
-                    con.Close();
-                    Label18.ForeColor = System.Drawing.Color.Green;
-                    Label18.Text = "You have successfully Send the story.";
-                    quick = 0;
-                    Response.Redirect("finishreading.aspx");
+                    if (temps != 1)
+                    {
+                        string dat = "Insert into [storyrate](Sidentity,Storyname,Rate) Values('" + TextID.Text + "','" + Nstory.Text + "','" + DropDownList4.Text + "')";
+                        SqlCommand commm = new SqlCommand(dat, con);
+                        con.Open();
+                        commm.ExecuteNonQuery();
+                        con.Close();
+                        string datt = "Insert into [readingtime](Sidentity,storyname,storyreadingtime) Values('" + TextID.Text + "','" + Nstory.Text + "','" + Label20.Text + "')";
+                        SqlCommand commmm = new SqlCommand(datt, con);
+                        con.Open();
+                        commmm.ExecuteNonQuery();
+                        con.Close();
+                        Label18.ForeColor = System.Drawing.Color.Green;
+                        Label18.Text = "You have successfully Send the story.";
+                        quick = 0;
+                        Response.Redirect("finishreading.aspx");
+                    }
+                    else
+                    {
+                        Label18.ForeColor = System.Drawing.Color.Red;
+                        Label18.Text = "This Story is already Rate.";
+                        quick = 0;
+                        Response.Redirect("Studentpage.aspx");
+                    }
                 }
                 else
                 {
                     Label18.ForeColor = System.Drawing.Color.Red;
-                    Label18.Text = "This Story is already Rate.";
-                    quick = 0;
-                    Response.Redirect("Studentpage.aspx");
+                    Label18.Text = "This id doesn't exist !!.";
                 }
+
             }
             else
             {
                 Label18.ForeColor = System.Drawing.Color.Red;
-                Label18.Text = "This id doesn't exist !!.";
+                Label18.Text = "invalid id !!.";
             }
-            
         }
 
         protected void Timer1_Tick(object sender, EventArgs e)

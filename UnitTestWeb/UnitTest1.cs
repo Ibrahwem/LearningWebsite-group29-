@@ -125,6 +125,68 @@ namespace UnitTestWeb
             //Assert
             Assert.IsFalse(x);
         }
-        
+        [TestMethod]
+        public void IdValidKing()
+        {
+            //Arrange
+            kingmichael check = new kingmichael();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+        [TestMethod]
+        public void IdValidPM()
+        {
+            //Arrange
+            ParentSendMessage check = new ParentSendMessage();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+        [TestMethod]
+        public void IdValidSM()
+        {
+            //Arrange
+            StudentMessages check = new StudentMessages();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+        [TestMethod]
+        public void IdValidStudentRequests()
+        {
+            //Arrange
+            StudentRequests check = new StudentRequests();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+
+        [TestMethod]
+        public void IdValidTheP()
+        {
+            //Arrange
+            WebForm2 check = new WebForm2();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+        [TestMethod]
+        public void IdValidTheLionandTheMouseShortStory()
+        {
+            //Arrange
+            TheLionandTheMouseShortStory check = new TheLionandTheMouseShortStory();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+
+
     }
 }
