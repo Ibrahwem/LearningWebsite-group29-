@@ -105,6 +105,15 @@ namespace UnitTestWeb
             //Assert
             Assert.IsFalse(x);
         }
-        
+        [TestMethod]
+        public void IdValid1()
+        {
+            //Arrange
+            CrocodileAndTheMonkey check = new CrocodileAndTheMonkey();
+            // Act
+            bool x = check.IdValid("1a3c5f7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
     }
 }
