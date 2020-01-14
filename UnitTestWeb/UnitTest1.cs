@@ -95,6 +95,36 @@ namespace UnitTestWeb
             //Assert
             Assert.IsTrue(x);
         }
+        [TestMethod]
+        public void Idlength()
+        {
+            //Arrange
+            Suggeststory check = new Suggeststory();
+            // Act
+            bool x = check.IdValid("1234567h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+        [TestMethod]
+        public void IdValid1()
+        {
+            //Arrange
+            CrocodileAndTheMonkey check = new CrocodileAndTheMonkey();
+            // Act
+            bool x = check.IdValid("1a3c5f7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+        [TestMethod]
+        public void IdValidHTBAB()
+        {
+            //Arrange
+            How_To_Build_a_Bratchet check = new How_To_Build_a_Bratchet();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
         
     }
 }
