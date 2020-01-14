@@ -97,9 +97,6 @@ namespace Learningweb
             Response.Redirect("ParentSendMessage.aspx");
         }
 
-        protected void comment_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

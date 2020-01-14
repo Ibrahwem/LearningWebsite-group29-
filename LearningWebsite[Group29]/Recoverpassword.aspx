@@ -139,7 +139,10 @@
                         <asp:Button ID="Button1" runat="server" CssClass="auto-style5" OnClick="Button1_Click1" Text="Finish Recover" />
                         <br />
                         <br />
-                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style11" NavigateUrl="~/Homepage.aspx">Back to homepage to log in</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style11" NavigateUrl="~/Login.aspx">Log in now</asp:HyperLink>
+                        <br />
+                        <br />
+                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style11" NavigateUrl="~/Homepage.aspx">Back to homepage </asp:HyperLink>
                         </em></strong></td>
                 </tr>
             </table>
