@@ -17,8 +17,18 @@ namespace Learningweb
 		{
 
 		}
-
-		protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        public bool IdValid(string id)
+        {
+            for (int i = 0; i < id.Length; i++)
+            {
+                if (id[i] < '0' || id[i] > '9')
+                {
+                    return false;
+                }
+            }
+            return id.Length == 9;
+        }
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
 		{
             if (DropDownList2.SelectedIndex.Equals(1))
             {
@@ -376,7 +386,7 @@ namespace Learningweb
 
         protected void Button1_Click1(object sender, EventArgs e)
         {
-
+            if(IdValid(TextID.Text))
             {
                 string check = " select count(*) from [student] where Sidentity ='" + TextID.Text + "'";
                 SqlCommand com = new SqlCommand(check, con);
@@ -422,6 +432,11 @@ namespace Learningweb
                     Label27.Text = "This id doesn't exist !!.";
                 }
                 
+            }
+            else
+            {
+                Label27.ForeColor = System.Drawing.Color.Red;
+                Label27.Text = "invalid id !!.";
             }
         }
     }
