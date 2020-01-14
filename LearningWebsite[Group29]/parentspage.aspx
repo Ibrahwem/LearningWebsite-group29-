@@ -35,7 +35,7 @@
         </p>
         <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="comment" runat="server" Height="95px" Width="736px"></asp:TextBox>
+            <asp:TextBox ID="comment" runat="server" Height="95px" Width="736px" OnTextChanged="comment_TextChanged"></asp:TextBox>
         &nbsp;&nbsp;&nbsp;&nbsp;
         </p>
         <p style="height: 90px">

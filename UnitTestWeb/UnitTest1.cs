@@ -85,7 +85,16 @@ namespace UnitTestWeb
             //Assert
             Assert.IsTrue(x);
         }
-
+        [TestMethod]
+        public void TestSuggestionSize()
+        {
+            //Arrange
+            parentsuggestion check = new parentsuggestion();
+            // Act
+            bool x = check.suggestsize("Test Message");
+            //Assert
+            Assert.IsTrue(x);
+        }
         
     }
 }
