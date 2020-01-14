@@ -145,6 +145,16 @@ namespace UnitTestWeb
             //Assert
             Assert.IsFalse(x);
         }
+        [TestMethod]
+        public void IdValidSM()
+        {
+            //Arrange
+            StudentMessages check = new StudentMessages();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
 
     }
 }
