@@ -176,6 +176,16 @@ namespace UnitTestWeb
             //Assert
             Assert.IsFalse(x);
         }
+        [TestMethod]
+        public void IdValidTheLionandTheMouseShortStory()
+        {
+            //Arrange
+            TheLionandTheMouseShortStory check = new TheLionandTheMouseShortStory();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
 
 
     }
