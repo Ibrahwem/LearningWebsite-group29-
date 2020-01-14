@@ -125,6 +125,26 @@ namespace UnitTestWeb
             //Assert
             Assert.IsFalse(x);
         }
-        
+        [TestMethod]
+        public void IdValidKing()
+        {
+            //Arrange
+            kingmichael check = new kingmichael();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+        [TestMethod]
+        public void IdValidPM()
+        {
+            //Arrange
+            ParentSendMessage check = new ParentSendMessage();
+            // Act
+            bool x = check.IdValid("1a3caf7h9");
+            //Assert
+            Assert.IsFalse(x);
+        }
+
     }
 }
