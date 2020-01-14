@@ -15,9 +15,9 @@
         }
         body
         {
-            background-image: url("https://news.cgtn.com/news/356b544e334d544f79636a4d78637a4e324d6a4e31457a6333566d54/img/f3a9e154b0954522bf9b3ca6d6e8e318/f3a9e154b0954522bf9b3ca6d6e8e318.jpg");
-    background-size:100%;
-    background-attachment:fixed;
+             background-image: url("http://getwallpapers.com/wallpaper/full/2/2/4/829535-school-background-images-1920x1080-for-ios.jpg");
+             background-size:100%;
+             background-attachment:fixed;
         }
 
         .auto-style4 {

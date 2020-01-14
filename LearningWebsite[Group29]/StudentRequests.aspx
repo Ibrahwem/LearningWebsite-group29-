@@ -57,7 +57,7 @@
 <style>
     body
         {
-     background-image: url("https://www.inmatrix.com/skins/background/Default_Nav[1920x1080].png");
+     background-image: url("http://getwallpapers.com/wallpaper/full/2/2/4/829535-school-background-images-1920x1080-for-ios.jpg");
     background-size:100%;
     background-attachment:fixed;
         }
