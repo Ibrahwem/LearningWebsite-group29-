@@ -13,5 +13,10 @@ namespace Learningweb
         {
 
         }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            Label1.Text = DateTime.Now + "";
+        }
     }
 }
