@@ -65,7 +65,7 @@
                 </asp:Timer>
                 &nbsp;&nbsp;
 <br />
-                <asp:Label ID="Label1" runat="server" Text="."></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="." style="color: #00FF00"></asp:Label>
             </ContentTemplate>
         </asp:UpdatePanel>
         <br />
