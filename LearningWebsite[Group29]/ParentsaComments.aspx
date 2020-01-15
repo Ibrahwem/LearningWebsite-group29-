@@ -40,10 +40,5 @@
 </body>
 </html>
 <style>
-    body
-        {
-            background-image: url("https://www.graciaviva.cat/png/big/1/15182_images-for-backgrounds.jpg");
-    background-size:100%;
-    background-attachment:fixed;
-        }
+    body { background-image: url('https://i.imgur.com/QVFUaZP.jpg?1'); }
 </style>
