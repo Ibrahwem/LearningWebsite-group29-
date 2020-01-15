@@ -16,7 +16,7 @@
             <asp:Label ID="Label1" runat="server" style="font-weight: 700; font-style: italic; font-size: large; color: #0000CC; background-color: #FFFF00" Text="Enter your identity"></asp:Label>
             <br />
 &nbsp;<asp:TextBox ID="TextBox1" runat="server" OnTextChanged="TextBox1_TextChanged"></asp:TextBox>
-            <asp:Button ID="Button1" runat="server" style="color: #00FF00; font-weight: 700; font-style: italic; background-color: #0000CC" Text="Search" />
+            <asp:Button ID="Button1" runat="server" style="color: #000000; font-weight: 700; font-style: italic; background-color: #33CCCC" Text="Search" />
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display." ForeColor="#333333" GridLines="None" style="font-weight: 700; font-style: italic" Width="257px">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
@@ -39,11 +39,11 @@
             </asp:SqlDataSource>
             <br />
             <strong><em>
-            <asp:Label ID="Label2" runat="server" CssClass="auto-style1" Text="Please choose story to start reading"></asp:Label>
+            <asp:Label ID="Label2" runat="server" CssClass="auto-style1" Text="Please choose story to start reading" BackColor="Transparent"></asp:Label>
             <br />
             </em></strong>
             <br />
-            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True"  DataTextField="Story" DataValueField="Story" Height="17px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="139px">
+            <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True"  DataTextField="Story" DataValueField="Story" Height="48px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" Width="155px">
                 <asp:ListItem Selected="True">Stories list</asp:ListItem>
                 <asp:ListItem>The Crocodile And The Monkey</asp:ListItem>
                 <asp:ListItem>The Lion and The Mouse </asp:ListItem>
@@ -73,5 +73,6 @@
     .auto-style1 {
         color: #FFFFFF;
         background-color: #3333FF;
+        font-size: large;
     }
 </style>
