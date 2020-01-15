@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LearningWebsite_Group29_;
 namespace UnitTestWeb
 {
     [TestClass]
@@ -14,7 +15,7 @@ namespace UnitTestWeb
         public void TestStudentIdentity()
         {
             //Arrange
-            studetregister check = new studetregister();
+            StudentRegister check = new StudentRegister();
             // Act
             bool x = check.StudentId("20715421");
             //Assert
@@ -25,7 +26,7 @@ namespace UnitTestWeb
         public void TestStudentusername()
         {
             //Arrange
-            studetregister check = new studetregister();
+            StudentRegister check = new StudentRegister();
             // Act
             bool x = check.StudentUsername("Ibrahem1998");
             //Assert
@@ -36,7 +37,7 @@ namespace UnitTestWeb
         public void TestStudentPass()
         {
             //Arrange
-            studetregister check = new studetregister();
+            StudentRegister check = new StudentRegister();
             // Act
             bool x = check.StudentPass("AbcdefghiI20158");
             //Assert

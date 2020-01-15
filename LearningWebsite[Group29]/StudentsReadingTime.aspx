@@ -33,3 +33,7 @@
     </form>
 </body>
 </html>
+<style>
+    body { background-image: url('https://i.imgur.com/QVFUaZP.jpg?1'); }
+</style>
+
