@@ -61,8 +61,10 @@
 &nbsp;&nbsp;
         <br />
             &nbsp;&nbsp; <span class="auto-style3">•</span>&nbsp;&nbsp;&nbsp;
-        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/studetregister.aspx" style="font-style: italic; font-weight: 700; color: white; font-size: x-large;">Click here to regist as a student</asp:HyperLink>
+        <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/StudentRegister.aspx" style="font-style: italic; font-weight: 700; color: white; font-size: x-large;">Click here to regist as a student</asp:HyperLink>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+            <br />
+            <br />
             &nbsp;&nbsp; <span class="auto-style3">•</span>&nbsp;&nbsp;&nbsp;
         <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/parentRegister.aspx" style="color: whitesmoke; font-weight: 700; font-style: italic; font-size: x-large;">Click here to regist as a parent</asp:HyperLink>
             <br />
