@@ -23,6 +23,11 @@
         .auto-style4 {            font-size: xx-large;
         }
 
+        .auto-style5 {
+            color: red;
+            font-size: xx-large;
+        }
+
     </style>
 </head>
 <body style="        height: 765px; margin-top: 51px;">
@@ -30,7 +35,9 @@
        <div>
            <strong><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="auto-style3"> 
            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Register like a student<br />
+           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           </span><span class="auto-style5"> 
+           Register like a student</span><span class="auto-style3"><br />
            </span><br />
             <br />
             <span class="auto-style4"><b>&nbsp;&nbsp; •&nbsp; </b></span>
