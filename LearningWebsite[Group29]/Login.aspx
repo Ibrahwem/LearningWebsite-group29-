@@ -17,7 +17,7 @@
                 </em>
             <br />
             <br />
-                <br />
+            <br />
                 <br />
             <br />
             <br />
@@ -26,6 +26,7 @@
             &nbsp;
             </strong>
             <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="user" ErrorMessage="insert your username" style="font-weight: 700; color: #FF0000">*</asp:RequiredFieldValidator>
+                <br />
             </em>
             <br />
                 <em><strong><span class="auto-style1"><span class="auto-style5"> <span class="auto-style7">•</span></span>&nbsp;&nbsp; <span class="auto-style10">Password</span><span class="auto-style9">&nbsp;</span></span><span class="auto-style5">&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp; <asp:TextBox ID="pass" runat="server" TextMode="Password" Height="31px" Width="188px"></asp:TextBox>
@@ -35,7 +36,7 @@
             <br />
             </em>
             </div>
-            <asp:ValidationSummary ID="ValidationSummary1" runat="server" style="color: #FF0000; font-style: italic; font-weight: 700;" Width="350px" />
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" style="color: #FF0000; font-style: italic; font-weight: 700;" Width="340px" />
             <div class="auto-style3">
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong><em><asp:Label ID="Label1" runat="server" Text="." CssClass="auto-style2" style="color: forestgreen"></asp:Label>
