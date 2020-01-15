@@ -59,7 +59,7 @@
 &nbsp;&nbsp;
             <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ParentLogin.aspx" style="color: #0000CC; background-color: #FFFF00; font-weight: 700; font-style: italic;">Log in now</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Login.aspx" style="color: #0000CC; background-color: #FFFF00; font-weight: 700; font-style: italic;">Log in now</asp:HyperLink>
             <br />
 &nbsp;<br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
