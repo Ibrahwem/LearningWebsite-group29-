@@ -8,24 +8,24 @@
 </head>
 <body style="height: 171px">
     <form id="form1" runat="server">
-        <div style="height: 413px">
+        <div style="height: 413px; text-align: center; width: 1475px;">
             <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Home" Width="129px" BackColor="#33CCCC" BorderColor="Red" />
+            <br />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Home" Width="172px"  BackColor="#336666" BorderColor="#336666" Height="50px" style="color: #FFFFFF" />
             <br />
             <asp:Label ID="Label1" runat="server" Text="Enter your ID:" style="color: #FFFFFF; font-size: x-large; font-weight: 700; font-style: italic"></asp:Label>
             <br />
             <br />
-            <asp:TextBox ID="TextBox1" runat="server" Height="20px" style="margin-top: 0px" Width="186px"></asp:TextBox>
-&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Check ID" BackColor="#33CCCC" BorderColor="Red" />
+            <asp:TextBox ID="TextBox1" runat="server" Height="22px" style="margin-top: 0px" Width="227px"></asp:TextBox>
+&nbsp;<asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Check ID"  BackColor="#336666" BorderColor="#336666" Height="29px" Width="124px" style="color: #FF0000" />
 &nbsp;<br />
             <br />
             <asp:Label ID="Label3" runat="server" Text="."></asp:Label>
             <br />
             <br />
             <br />
-            <br />
-            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="319px" CellPadding="4" ForeColor="#333333" GridLines="None">
+            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" Width="790px" CellPadding="4" ForeColor="#333333" GridLines="None" Height="44px" style="margin-left: 395px">
                 <AlternatingRowStyle BackColor="White" />
                 <Columns>
                     <asp:BoundField DataField="message" HeaderText="message" SortExpression="message" />
