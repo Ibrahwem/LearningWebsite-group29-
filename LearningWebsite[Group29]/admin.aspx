@@ -36,7 +36,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <asp:Timer ID="Timer1" runat="server" Interval="1000" OnTick="Timer1_Tick1">
                 </asp:Timer>
-                <asp:Label ID="Label1" runat="server" Text="." style="text-align: left"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="." style="text-align: left; color: #00FF00;"></asp:Label>
             </ContentTemplate>
         </asp:UpdatePanel>
         <br />

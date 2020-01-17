@@ -27,6 +27,8 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</div>
         <p style:"d ; color: #FFFFFF;" class="auto-style1">
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enter your suggestions(First choose you name from the list):</p>
+        <p style:"d ; color: #FFFFFF;" class="auto-style2">
+            what is your fullname:</p>
         <p style:"d ; color: #FFFFFF;" class="auto-style1">
             &nbsp;
             <asp:DropDownList ID="DropDownList5" runat="server" DataSourceID="SqlDataSource2" DataTextField="fullname" DataValueField="fullname" style="font-weight: 700; font-style: italic; background-color: #99FF66">
@@ -65,7 +67,7 @@
                 </asp:Timer>
                 &nbsp;&nbsp;
 <br />
-                <asp:Label ID="Label1" runat="server" Text="."></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="." style="color: #00FF00"></asp:Label>
             </ContentTemplate>
         </asp:UpdatePanel>
         <br />
@@ -84,5 +86,9 @@
         height: 599px;
         font-size: xx-large;
         color: #FFFFFF;
+    }
+    .auto-style2 {
+        color: #00FF00;
+        font-size: large;
     }
 </style>

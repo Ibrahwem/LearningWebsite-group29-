@@ -21,6 +21,7 @@ namespace Learningweb
             clock--;
             if(clock == 0)
             {
+                clock = 5;
                 Response.Redirect("Studentpage.aspx");
             }
         }
