@@ -78,7 +78,7 @@
 <style>
     body
 { 
-    background-image: url("http://getwallpapers.com/wallpaper/full/2/2/4/829535-school-background-images-1920x1080-for-ios.jpg");
+    background-image: url("https://images.alphacoders.com/944/944300.jpg");
     background-size:100%;
     background-attachment:fixed;
     height: 100%;
