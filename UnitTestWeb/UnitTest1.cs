@@ -102,9 +102,9 @@ namespace UnitTestWeb
             //Arrange
             Suggeststory check = new Suggeststory();
             // Act
-            bool x = check.IdValid("1234567h9");
+            bool x = check.IdValid("123456789");
             //Assert
-            Assert.IsFalse(x);
+            Assert.IsTrue(x);
         }
         [TestMethod]
         public void IdValid1()
@@ -122,7 +122,7 @@ namespace UnitTestWeb
             //Arrange
             How_To_Build_a_Bratchet check = new How_To_Build_a_Bratchet();
             // Act
-            bool x = check.IdValid("1a3caf7h9");
+            bool x = check.IdValid("1a7h9");
             //Assert
             Assert.IsFalse(x);
         }
@@ -132,7 +132,7 @@ namespace UnitTestWeb
             //Arrange
             kingmichael check = new kingmichael();
             // Act
-            bool x = check.IdValid("1a3caf7h9");
+            bool x = check.IdValid("4657h9");
             //Assert
             Assert.IsFalse(x);
         }
@@ -152,9 +152,9 @@ namespace UnitTestWeb
             //Arrange
             StudentMessages check = new StudentMessages();
             // Act
-            bool x = check.IdValid("1a3caf7h9");
+            bool x = check.IdValid("125489652");
             //Assert
-            Assert.IsFalse(x);
+            Assert.IsTrue(x);
         }
         [TestMethod]
         public void IdValidStudentRequests()
@@ -162,7 +162,7 @@ namespace UnitTestWeb
             //Arrange
             StudentRequests check = new StudentRequests();
             // Act
-            bool x = check.IdValid("1a3caf7h9");
+            bool x = check.IdValid("207889288111");
             //Assert
             Assert.IsFalse(x);
         }
@@ -173,7 +173,7 @@ namespace UnitTestWeb
             //Arrange
             WebForm2 check = new WebForm2();
             // Act
-            bool x = check.IdValid("1a3caf7h9");
+            bool x = check.IdValid("id");
             //Assert
             Assert.IsFalse(x);
         }
@@ -183,9 +183,9 @@ namespace UnitTestWeb
             //Arrange
             TheLionandTheMouseShortStory check = new TheLionandTheMouseShortStory();
             // Act
-            bool x = check.IdValid("1a3caf7h9");
+            bool x = check.IdValid("315250894");
             //Assert
-            Assert.IsFalse(x);
+            Assert.IsTrue(x);
         }
 
 

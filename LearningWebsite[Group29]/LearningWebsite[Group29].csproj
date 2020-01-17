@@ -91,6 +91,7 @@
     <Content Include="aboutus.aspx" />
     <Content Include="admin.aspx" />
     <Content Include="adminInformation.aspx" />
+    <Content Include="ADMINlogin.aspx" />
     <Content Include="AdventureStories.aspx" />
     <Content Include="AdventureStoriesD.aspx" />
     <Content Include="AgreedStoriesByParents.aspx" />
@@ -164,6 +165,7 @@
     <Content Include="images\THE PARTICULAR WAY OF THE ODD MS. MCKAY\7.png" />
     <Content Include="kingmichael.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="PARENTlogin.aspx" />
     <Content Include="parentRegister.aspx" />
     <Content Include="ParentsaComments.aspx" />
     <Content Include="ParentSendMessage.aspx" />
@@ -205,6 +207,13 @@
     </Compile>
     <Compile Include="adminInformation.aspx.designer.cs">
       <DependentUpon>adminInformation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ADMINlogin.aspx.cs">
+      <DependentUpon>ADMINlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ADMINlogin.aspx.designer.cs">
+      <DependentUpon>ADMINlogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdventureStories.aspx.cs">
       <DependentUpon>AdventureStories.aspx</DependentUpon>
@@ -286,6 +295,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PARENTlogin.aspx.cs">
+      <DependentUpon>PARENTlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PARENTlogin.aspx.designer.cs">
+      <DependentUpon>PARENTlogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="parentRegister.aspx.cs">
       <DependentUpon>parentRegister.aspx</DependentUpon>

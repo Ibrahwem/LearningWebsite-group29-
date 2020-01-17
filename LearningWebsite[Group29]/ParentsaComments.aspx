@@ -18,7 +18,7 @@
             <br />
             <br />
 &nbsp;
-            <asp:GridView ID="GridView1" runat="server" Height="367px" style="text-align: center" Width="1567px" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
+            <asp:GridView ID="GridView1" runat="server" Height="341px" style="text-align: center" Width="1284px" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" ForeColor="Black" GridLines="Vertical">
                 <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
                     <asp:BoundField DataField="comment" HeaderText="comment" SortExpression="comment" />
@@ -40,10 +40,5 @@
 </body>
 </html>
 <style>
-    body
-        {
-            background-image: url("https://www.graciaviva.cat/png/big/1/15182_images-for-backgrounds.jpg");
-    background-size:100%;
-    background-attachment:fixed;
-        }
+    body { background-image: url('https://i.imgur.com/QVFUaZP.jpg?1'); }
 </style>

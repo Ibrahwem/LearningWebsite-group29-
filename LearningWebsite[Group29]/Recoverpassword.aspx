@@ -6,14 +6,22 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
+        body {
+            background-image: url("https://images.pexels.com/photos/457881/pexels-photo-457881.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+
         .auto-style1 {
             font-size: large;
         }
+
         .auto-style2 {
             width: 223px;
             color: #FFFFFF;
             background-color: #333399;
         }
+
         .auto-style3 {
             width: 199px;
         }
@@ -139,7 +147,10 @@
                         <asp:Button ID="Button1" runat="server" CssClass="auto-style5" OnClick="Button1_Click1" Text="Finish Recover" />
                         <br />
                         <br />
-                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style11" NavigateUrl="~/Login.aspx">Log in now</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style11" NavigateUrl="~/Login.aspx">Student Login</asp:HyperLink>
+                        <br />
+                        <br />
+                        <asp:HyperLink ID="HyperLink3" runat="server" CssClass="auto-style11" NavigateUrl="~/PARENTlogin.aspx">Parent login</asp:HyperLink>
                         <br />
                         <br />
                         <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style11" NavigateUrl="~/Homepage.aspx">Back to homepage </asp:HyperLink>

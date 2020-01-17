@@ -41,6 +41,12 @@
             color: #00FF00;
             font-size: x-large;
         }
+        .auto-style10 {
+            color: #00FF00;
+        }
+        .auto-style11 {
+            color: #FFFF00;
+        }
     </style>
 </head>
 <body style="height: 537px">
@@ -50,12 +56,18 @@
         <div class="auto-style7">
             <span class="auto-style8">&nbsp;</span><br class="auto-style8" />
             <span class="auto-style8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; •&nbsp;&nbsp; </span>
-        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Login.aspx" style="font-weight: 700; font-style: italic; font-size: xx-large;" CssClass="auto-style8">Log in </asp:HyperLink>
-        <br />
-        <br />
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Login.aspx" style="font-weight: 700; font-style: italic; font-size: xx-large;" CssClass="auto-style8">Student login</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="auto-style8">•&nbsp;&nbsp; </span>
+        <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/PARENTlogin.aspx" style="font-weight: 700; font-style: italic; font-size: xx-large;" CssClass="auto-style10">Parent login</asp:HyperLink>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span class="auto-style8">•&nbsp;&nbsp; </span>
+        <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/ADMINlogin.aspx" style="font-weight: 700; font-style: italic; font-size: xx-large;" CssClass="auto-style11">Admin login</asp:HyperLink>
             <br />
             <br />
         <br />
+        <br />
+            <br />
         <br />
             &nbsp;&nbsp;&nbsp;<span class="auto-style4">&nbsp;</span><span class="auto-style5">In case you don&#39;t have account :</span><br />
 &nbsp;&nbsp;
